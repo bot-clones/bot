@@ -55,7 +55,7 @@ class Memes(commands.Cog):
         await self.send_meme(ctx, "/chemistrymemes")
 
     @commands.command(name='stenar', aliases=['geology', 'geologi'], help='Geologi såklart')
-    async def _chemistry(self, ctx):
+    async def _geology(self, ctx):
         await ctx.message.add_reaction('🗿')
         await self.send_meme(ctx, "/Geologymemes")
 
