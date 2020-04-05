@@ -42,9 +42,6 @@ class Events(commands.Cog):
         if 'åland' in msg:
             await message.add_reaction('🇦🇽')
 
-        if 'minecraft' in msg:
-            await message.add_reaction('🌄')
-
         if 'spektrum' in msg:
             await message.add_reaction('🌈')
 
