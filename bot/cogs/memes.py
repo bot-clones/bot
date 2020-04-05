@@ -4,7 +4,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-
 class Memes(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -13,11 +12,14 @@ class Memes(commands.Cog):
     async def send_meme(self, ctx, meme):
         url = f'https://meme-api.herokuapp.com/gimme{meme}'
         page = requests.get(url)
-        soup = BeautifulSoup(page.content, 'html.parser')
-        site_json=json.loads(soup.text)
-        e = discord.Embed()
-        e.set_image(url=site_json['url'])
-        await ctx.send(embed=e)
+        try:
+            soup = BeautifulSoup(page.content, 'html.parser')
+            site_json = json.loads(soup.text)
+            e = discord.Embed()
+            e.set_image(url=site_json['url'])
+            await ctx.send(embed=e)
+        except:
+            await ctx.send('🚧 Out of memes, try another time 🚧')
 
     @commands.command(name='meme', help='Random')
     async def _meme(self, ctx):
