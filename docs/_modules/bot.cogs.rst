@@ -28,6 +28,14 @@ bot.cogs.memes module
    :undoc-members:
    :show-inheritance:
 
+bot.cogs.minecraft module
+-------------------------
+
+.. automodule:: bot.cogs.minecraft
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 bot.cogs.music module
 ---------------------
 

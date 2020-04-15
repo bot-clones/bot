@@ -23,10 +23,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -168,7 +168,8 @@
             
   <div class="section" id="spektrum-discord-bot">
 <h1>Spektrum Discord Bot 🤖<a class="headerlink" href="#spektrum-discord-bot" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://hd4niel.github.io/spektrum-bot/">https://hd4niel.github.io/spektrum-bot/</a></p>
+<p><a class="reference external" href="https://spektrumrf.github.io/bot/">https://spektrumrf.github.io/bot/</a></p>
+<p><a class="reference external" href="https://discordapp.com/oauth2/authorize?&amp;client_id=693862590866128937&amp;permissions=66583873&amp;scope=bot">Invite</a></p>
 <div class="section" id="commands-i">
 <h2>Commands ℹ️<a class="headerlink" href="#commands-i" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>Spektrum Discord Bot 🤖
@@ -179,13 +180,16 @@ Kommandon:
   inbjudan       Skapa en tillfällig inbjudan
   kasta          Kasta ett specifierat antal tärningar
 Memes:
-  cs             01100011 01110011
   dank           420
+  data           01100011 01110011
   fyssa          pi=3
   gegga          60°10&#39;15.2&quot;N 24°57&#39;22.6&quot;E
-  kemist         H2O + H2O = H4O
+  kemma          H2O+H2O=H4O
   mafs           1+2+3+...=-1/12
   meme           Random
+  stenar         Geologi såklart
+Minecraft:
+  minecraft      Se om nån server är uppe och om nån fellow gamer är online
 Music:
   join           Joins a voice channel
   leave          Clears the queue and leaves the voice channel
@@ -222,9 +226,15 @@ You can also type !help category for more info on a category.
 </div>
 <div class="section" id="develop">
 <h2>Develop 💻<a class="headerlink" href="#develop" title="Permalink to this headline">¶</a></h2>
+<p>Secrets:</p>
+<p>Be om att bli inbjuden till developer console
+<a class="reference external" href="https://discordapp.com/developers">https://discordapp.com/developers</a>
+av &#64;hd4niel</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python -m venv env
 $ <span class="nb">source</span> env/bin/activate
 $ pip install -r requirements.txt
+$ <span class="nb">cd</span> bot
+$ python bot.py
 ...
 $ deactivate
 </pre></div>
@@ -233,6 +243,8 @@ $ deactivate
 <h3>Docker 🐋<a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ docker build -t bot .
 $ docker run -it bot
+$ heroku container:push worker
+$ heroku container:release worker
 </pre></div>
 </div>
 </div>

@@ -1,7 +1,9 @@
 
 # Spektrum Discord Bot 🤖
 
-<https://hd4niel.github.io/spektrum-bot/>
+<https://spektrumrf.github.io/bot/>
+
+[Invite](https://discordapp.com/oauth2/authorize?&client_id=693862590866128937&permissions=66583873&scope=bot)
 
 ## Commands ℹ️
 
@@ -14,13 +16,16 @@ Kommandon:
   inbjudan       Skapa en tillfällig inbjudan
   kasta          Kasta ett specifierat antal tärningar
 Memes:
-  cs             01100011 01110011
   dank           420
+  data           01100011 01110011
   fyssa          pi=3
   gegga          60°10'15.2"N 24°57'22.6"E
-  kemist         H2O + H2O = H4O
+  kemma          H2O+H2O=H4O
   mafs           1+2+3+...=-1/12
   meme           Random
+  stenar         Geologi såklart
+Minecraft:
+  minecraft      Se om nån server är uppe och om nån fellow gamer är online
 Music:
   join           Joins a voice channel
   leave          Clears the queue and leaves the voice channel
@@ -56,10 +61,18 @@ You can also type !help category for more info on a category.
 
 ## Develop 💻
 
+Secrets:
+
+Be om att bli inbjuden till developer console
+https://discordapp.com/developers
+av @hd4niel
+
 ```bash
 $ python -m venv env
 $ source env/bin/activate
 $ pip install -r requirements.txt
+$ cd bot
+$ python bot.py
 ...
 $ deactivate
 ```
