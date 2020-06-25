@@ -65,7 +65,7 @@ Secrets:
 
 Be om att bli inbjuden till developer console
 https://discordapp.com/developers
-av @hd4niel
+av @deinal
 
 ```bash
 $ python -m venv env
