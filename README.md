@@ -1,9 +1,7 @@
 
 # Spektrum Discord Bot 🤖
 
-<https://spektrumrf.github.io/bot/>
-
-[Invite](https://discordapp.com/oauth2/authorize?&client_id=693862590866128937&permissions=66583873&scope=bot)
+[Invite to server](https://discordapp.com/oauth2/authorize?&client_id=693862590866128937&permissions=66583873&scope=bot)
 
 ## Commands ℹ️
 
@@ -101,10 +99,8 @@ $ heroku container:release worker
 ```bash
 $ cd docs
 $ pip install -r requirements.txt
-$ sphinx-apidoc -o _modules ../bot
-$ make html
-$ xdg-open _build/html/index.html
-$ make github
+$ make docs
+$ xdg-open index.html
 ```
 
 ### Lint 🔍

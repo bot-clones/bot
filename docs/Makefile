@@ -15,7 +15,9 @@ help:
 .PHONY: help Makefile
 
 # Move to GitHub serve location
-github:
+docs:
+	@rm -rf _modules
+	@sphinx-apidoc -o _modules ../bot
 	@make html
 	@cp -a _build/html/. ../docs
 
