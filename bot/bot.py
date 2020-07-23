@@ -58,14 +58,14 @@ if __name__ == '__main__':
     async def _contribute(ctx):
         title = 'Contribute'
         description = 'Fork me here 🍴'
-        url = 'https://github.com/hd4niel/spektrum-bot'
+        url = 'https://github.com/spektrumrf/bot'
         await ctx.send(embed=get_embed(title, description, url))
 
     @bot.command(name='documentation', help='Bot is feeling well documented')
     async def _documentation(ctx):
         title = 'Documentation'
         description = 'Read about me here 📖'
-        url = 'https://hd4niel.github.io/spektrum-bot'
+        url = 'https://spektrumrf.github.io/bot'
         await ctx.send(embed=get_embed(title, description, url))
 
     @bot.command(name='text-to-speech', help='I sometimes speak ;)')

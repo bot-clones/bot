@@ -61,11 +61,20 @@ You can also type !help category for more info on a category.
 
 ## Develop 💻
 
-Secrets:
+### Secrets
 
-Be om att bli inbjuden till developer console
-https://discordapp.com/developers
-av @deinal
+Skapa en `.env` fil med
+
+```
+DISCORD_TOKEN=...
+WOLFRAM_APP_ID=...
+```
+
+som är tillgängliga åt användare med admin access till denna repo.
+
+Bot rättigheter ändras i discord developer console https://discordapp.com/developers
+
+### Run
 
 ```bash
 $ python -m venv env
@@ -82,6 +91,7 @@ $ deactivate
 ```bash
 $ docker build -t bot .
 $ docker run -it bot
+$ heroku container:login
 $ heroku container:push worker
 $ heroku container:release worker
 ```
