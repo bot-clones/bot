@@ -12,6 +12,8 @@ class Minecraft(commands.Cog):
         for ip in msg.split():
             if ':' in ip:
                 address = ip
+            elif ip == 'spektrum.mcserver.io':
+                address = 'spektrum.mcserver.io'
             else:
                 address = f'{ip}:25565'
 
